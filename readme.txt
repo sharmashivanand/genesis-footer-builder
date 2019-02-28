@@ -1,10 +1,10 @@
-=== Genesis Footer Builder ===
+﻿=== Genesis Footer Builder ===
 Contributors: varun21, ruchika_wp
-Donate Link: https://www.binaryturf.com?item_name=Donation%20for%20Genesis%20Footer%20Builder&cmd=_donations&currency_code=USD&lc=US
+Donate Link: https://www.converticacommerce.com?item_name=Donation%20for%20Genesis%20Footer%20Builder&cmd=_donations&currency_code=USD&lc=US&business=shivanand@converticacommerce.com
 Tags: genesis, genesiswp, genesis footer, footer customization
 Requires at least: 3.6
-Tested up to: 4.6
-Stable tag: 1.3.2
+Tested up to: 5.1
+Stable tag: 1.3.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 

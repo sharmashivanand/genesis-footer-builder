@@ -3,11 +3,11 @@
 /**
  *
  * Plugin Name: Genesis Footer Builder
- * Plugin URI: https://www.binaryturf.com/?p=17056
+ * Plugin URI: https://www.converticacommerce.com/?p=17056
  * Description: Helps build a custom footer for Genesis or Genesis child-themes.
- * Version: 1.3.2
+ * Version: 1.3.3
  * Author: Shivanand Sharma
- * Author URI: https://www.binaryturf.com
+ * Author URI: https://www.converticacommerce.com
  * License: GPL-2.0+
  * License URI: http://www.opensource.org/licenses/gpl-license.php
  * Text Domain: genesis-footer-builder
