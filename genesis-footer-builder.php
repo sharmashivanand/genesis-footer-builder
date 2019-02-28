@@ -5,12 +5,13 @@
  * Plugin Name: Genesis Footer Builder
  * Plugin URI: https://www.converticacommerce.com/?p=17056
  * Description: Helps build a custom footer for Genesis or Genesis child-themes.
- * Version: 1.3.3
+ * Version: 1.3.4
  * Author: Shivanand Sharma
  * Author URI: https://www.converticacommerce.com
  * License: GPL-2.0+
  * License URI: http://www.opensource.org/licenses/gpl-license.php
  * Text Domain: genesis-footer-builder
+ * Donate Link: https://www.converticacommerce.com?item_name=Donation%20for%20Genesis%20Footer%20Builder&cmd=_xclick&currency_code=USD&business=shivanand@converticacommerce.com
  *
  */
 

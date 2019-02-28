@@ -61,13 +61,13 @@ class Gfb_Admin extends Genesis_Admin_Boxes {
 		
 		add_meta_box( 'gfb-footer-creds', __( 'Footer Copyright Customizer', 'genesis-footer-builder' ), array( $this, 'gfb_customizer_box' ), $this->pagehook, 'main' );
 		
-		//add_meta_box( 'gfb-support', __( 'Help and Support', 'genesis-footer-builder' ), array( $this, 'gfb_help_support' ), $this->pagehook, 'column2' );
+		add_meta_box( 'gfb-support', __( 'Help and Support', 'genesis-footer-builder' ), array( $this, 'gfb_help_support' ), $this->pagehook, 'column2' );
 		
-		add_meta_box( 'gfb-sb-showcase', __( 'WordPress Themes By Binary Turf', 'genesis-footer-builder' ), array( $this, 'gfb_themes_showcase' ), $this->pagehook, 'column2' );
+		//add_meta_box( 'gfb-sb-showcase', __( 'WordPress Themes By Binary Turf', 'genesis-footer-builder' ), array( $this, 'gfb_themes_showcase' ), $this->pagehook, 'column2' );
 		
-		add_meta_box( 'gfb-bt-affiliate', __( 'Become an Affiliate', 'genesis-footer-builder' ), array( $this, 'gfb_bt_affiliate' ), $this->pagehook, 'column2' );
+		//add_meta_box( 'gfb-bt-affiliate', __( 'Become an Affiliate', 'genesis-footer-builder' ), array( $this, 'gfb_bt_affiliate' ), $this->pagehook, 'column2' );
 		
-		add_meta_box( 'gfb-genesis-tips', __( 'Genesis Tips', 'genesis-footer-builder' ), array( $this, 'gfb_bt_feed' ), $this->pagehook, 'column2' );
+		//add_meta_box( 'gfb-genesis-tips', __( 'Genesis Tips', 'genesis-footer-builder' ), array( $this, 'gfb_bt_feed' ), $this->pagehook, 'column2' );
 		
 		add_meta_box( 'gfb-donate', __( 'Love Genesis Footer Builder?', 'genesis-footer-builder' ), array( $this, 'gfb_bt_donate' ), $this->pagehook, 'column2' );
 		
@@ -114,7 +114,7 @@ class Gfb_Admin extends Genesis_Admin_Boxes {
 	function scripts() {
 
 		parent::scripts();
-		genesis_load_admin_js();
+        genesis_scripts()->enqueue_and_localize_admin_scripts();
 		
 	}
 	
@@ -354,17 +354,16 @@ class Gfb_Admin extends Genesis_Admin_Boxes {
 	}
 	
 	function gfb_help_support() {
-		
 		?>
 		<div class="gfb-help-sidebar">
 			<p><?php _e( 'For Genesis Footer Builder support, see:', 'genesis-footer-builder' ) ?></p>
-			<!-- Yet to add link to WordPress.Org forum for our plugin -->
+			<!-- Yet to add link to WordPress.Org forum for our plugin --> 
+			<p><?php printf( __( '%sRate Us 🌟🌟🌟🌟🌟%s', 'genesis-footer-builder' ), '<a href="https://wordpress.org/plugins/genesis-footer-builder/" target="_blank">', '</a>' ); ?></p>
 			<p><?php printf( __( '%sWordPress.Org Forums%s', 'genesis-footer-builder' ), '<a href="https://wordpress.org/support/plugin/genesis-footer-builder" target="_blank">', '</a>' ); ?></p>
-			<p><?php printf( __( '%sContact the Developer%s', 'genesis-footer-builder' ), '<a href="https://www.binaryturf.com/?p=55" target="_blank">', '</a>' ); ?></p>
-			<p class="gfb-sb-creds gfb-desc"><?php printf( __( 'Genesis plugin by %sBinaryTurf.Com%s', 'genesis-footer-builder' ), '<a title="Binary Turf" href="https://www.binaryturf.com/?p=9083" target="_blank">', '</a>' ); ?></p>
+			<p><?php printf( __( '%sContact the Developer%s', 'genesis-footer-builder' ), '<a href="https://www.converticacommerce.com/?p=55" target="_blank">', '</a>' ); ?></p>
+			<p class="gfb-sb-creds gfb-desc"><?php printf( __( 'Genesis plugin by %ConverticaCommerce.Com%s', 'genesis-footer-builder' ), '<a title="Convertica Commerce" href="https://www.converticacommerce.com/" target="_blank">', '</a>' ); ?></p>
 		</div>
 		<?php
-		
 	}
 	
 	function gfb_themes_showcase() {
@@ -444,7 +443,7 @@ class Gfb_Admin extends Genesis_Admin_Boxes {
 		
 		?>
 			<p><em><?php _e( 'Consider donating, if you love the plugin. No matter, the size of donation, it always encourages to keep delivering value.', 'genesis-footer-builder' ); ?></em></p>
-			<p><a class="donate-cta green-cta" href="https://www.binaryturf.com?item_name=Donation%20for%20Genesis%20Footer%20Builder&cmd=_donations&currency_code=USD&lc=US" target="_blank"><span class="dashicons dashicons-heart"></span>&nbsp;<?php _e( 'Contribute', 'genesis-footer-builder' ); ?></a></p>
+			<p><a class="donate-cta green-cta" href="https://www.converticacommerce.com?item_name=Donation%20for%20Genesis%20Footer%20Builder&cmd=_xclick&currency_code=USD&business=shivanand@converticacommerce.com" target="_blank"><span class="dashicons dashicons-heart"></span>&nbsp;<?php _e( 'Contribute', 'genesis-footer-builder' ); ?></a></p>
 		<?php
 		
 	}

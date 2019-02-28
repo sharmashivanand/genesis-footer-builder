@@ -104,22 +104,22 @@
 	margin-left: 15px;
 }
 
-.one-half {
+.genesis-footer-builder .one-half {
 	float: left;
 	margin-left: 2.564102564102564%;
 	width: 48.717948717948715%;
 }
 
-.first {
+.genesis-footer-builder .first {
 	margin-left: 0;
 }
 
-.clearfix {
+.genesis-footer-builder .clearfix {
 	display: block;
 	clear: both;
 }
 
-img {
+.genesis-footer-builder .wrap img {
 	max-width: 100%;
 	display: block;
 }
@@ -144,7 +144,7 @@ img {
 
 /* Affiliate and Donation section */
 
-.green-cta {
+.genesis-footer-builder .green-cta {
 	background-color: #3fbf3f;
 	border-radius: 2px;
 	color: #ffffff;
@@ -156,13 +156,13 @@ img {
 	position: relative;
 }
 
-.green-cta:hover {
+.genesis-footer-builder .green-cta:hover {
 	background-color: #39ac39;
 	color: #fff;
 	transition: all 0.4s ease-in-out 0s;
 }
 
-.green-cta .dashicons {
+.genesis-footer-builder .green-cta .dashicons {
 	background-color: #39ac39;
 	left: 0;
 	margin-right: 3px;
@@ -172,7 +172,7 @@ img {
 	width: 40px;
 }
 
-.green-cta:hover .dashicons {
+.genesis-footer-builder .green-cta:hover .dashicons {
 	background-color: #3fbf3f;
 	transition: all 0.4s ease-in-out 0s;
 }
