@@ -1,10 +1,10 @@
-=== Genesis Footer Builder ===
+﻿=== Genesis Footer Builder ===
 Contributors: varun21, ruchika_wp
 Donate Link: https://www.converticacommerce.com?item_name=Donation%20for%20Genesis%20Footer%20Builder&cmd=_donations&currency_code=USD&lc=US&business=shivanand@converticacommerce.com
 Tags: genesis, genesiswp, genesis footer, footer customization
 Requires at least: 3.6
 Tested up to: 5.1
-Stable tag: 1.3.4
+Stable tag: 1.3.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -103,6 +103,9 @@ The copyright message in the site footer will change to:
 `Copyright © John Doe · All Rights Reserved`
 
 == Changelog ==
+
+= Version 1.3.5 =
+Fixed compatibility with Genesis 3.0
 
 = Version 1.3.4 =
 Updated donate links.

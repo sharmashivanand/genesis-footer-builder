@@ -5,7 +5,7 @@
  * Plugin Name: Genesis Footer Builder
  * Plugin URI: https://www.converticacommerce.com/?p=17056
  * Description: Helps build a custom footer for Genesis or Genesis child-themes.
- * Version: 1.3.4
+ * Version: 1.3.5
  * Author: Shivanand Sharma
  * Author URI: https://www.converticacommerce.com
  * License: GPL-2.0+
@@ -24,7 +24,7 @@ define( 'GFB_PLUGIN_NAME', 'Genesis Footer Builder' );
 define( 'GFB_SETTINGS_VER', '1.0' );
 
 
-register_activation_hook( __FILE__, 'gfb_activation' );
+register_activation_hook( __FILE__, 'gfb_activation' ); 
 
 
 /**
@@ -53,8 +53,9 @@ function gfb_is_bt_theme() {
 
 function gfb_activation() {
 	
-	if ( 'genesis' != basename( TEMPLATEPATH ) && ! gfb_is_bt_theme() )
-		gfb_deactivate_template_err();
+	if ( 'genesis' != basename( get_template_directory() ) && ! gfb_is_bt_theme() ) {
+        gfb_deactivate_template_err();
+    }
 	
 	if(  !defined( 'PARENT_THEME_VERSION' ) || !version_compare( PARENT_THEME_VERSION, '2.1.0', '>=' ) )
 		gfb_deactivate_version_err( '2.1.0', '3.9.2' );
@@ -71,7 +72,7 @@ add_action( 'admin_init', 'gfb_deactivate_self_no_genesis' );
 
 function gfb_deactivate_self_no_genesis() {
     
-	if ( !function_exists( 'genesis_pre' ) && ! gfb_is_bt_theme() ) {
+	if ( !function_exists( 'genesis_constants' ) && !gfb_is_bt_theme() ) {
 		deactivate_plugins( plugin_basename( __FILE__ ) ); // Deactivate plugin
 		gfb_deactivate_genesis_inactive();
     }
